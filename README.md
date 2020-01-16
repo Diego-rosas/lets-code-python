@@ -1,3 +1,11 @@
+```
+ _            _   _         _     _  __  
+| |_    ___  | | | |  ___  | |   (_) \ \ 
+| ' \  / -_) | | | | / _ \ |_|    _   | |
+|_||_| \___| |_| |_| \___/ (_)   ( )  | |
+                                 |/  /_/ 
+```
+
 # lets-code-python
 https://letscode-academy.com/cursos/python_adulto.html
 
