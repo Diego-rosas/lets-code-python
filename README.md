@@ -9,7 +9,8 @@ http://www.devfuria.com.br/python/virtualenv/
 
 # 1º Sábado 11.01.2020
 
-- Uso do Slack 
+- Uso do Slack (https://lets-code-alunos.slack.com/)
+
 - Tipos de variáveis 
 - estuturas condicionais
 - Lista de exercicios
