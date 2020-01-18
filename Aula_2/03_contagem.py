@@ -5,7 +5,13 @@
 numero = int(input('digite um numero: '))
 
 lista = 0
+resultado = []
 
 while lista < numero:
-    print(numero - 1)
+    resultado.append( numero - 1 )
     numero = numero - 1
+
+resultado.sort()
+
+print(resultado)
+
