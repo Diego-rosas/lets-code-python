@@ -23,4 +23,10 @@ http://www.devfuria.com.br/python/virtualenv/
 - estuturas condicionais
 - Lista de exercicios
 
+# 2º Sábado 18.01.2020
+
+- Listas (metodos append, remove, pop) e DEL 
+- Estrutura de repetiçāo (laço For)
+
+
 
