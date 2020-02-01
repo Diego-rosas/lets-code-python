@@ -28,5 +28,9 @@ http://www.devfuria.com.br/python/virtualenv/
 - Listas (metodos append, remove, pop) e DEL 
 - Estrutura de repetiçāo (laço For)
 
+# 3º Sábado 01.02.2020
+- Revisao listas, laço for, while
+
+
 
 
