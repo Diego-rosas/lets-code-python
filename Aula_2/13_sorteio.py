@@ -29,10 +29,13 @@ for numero in sorteio:
         menor = numero
 print('o menor numero da lista eh', menor)
 
+# poderia ter 2 ifs no mesmo for
+
 soma = 0
 
 for numero in sorteio:
     soma = soma + numero
+    # soma += numero
 media = soma / len(sorteio)
 print('a soma deu isso:', soma)
 print(media, 'é a media')

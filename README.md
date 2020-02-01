@@ -30,6 +30,8 @@ http://www.devfuria.com.br/python/virtualenv/
 
 # 3º Sábado 01.02.2020
 - Revisao listas, laço for, while
+- funções
+
 
 
 
