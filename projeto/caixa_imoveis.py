@@ -12,3 +12,4 @@ soup = make_soup("https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.h
 for registros in soup.findAll("tr"):
     for dados in registros.findAll("td"):
         print(dados.text)
+    
