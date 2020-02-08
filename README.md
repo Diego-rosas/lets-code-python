@@ -32,6 +32,10 @@ http://www.devfuria.com.br/python/virtualenv/
 - Revisao listas, laço for, while
 - funções
 
+# 4º sabado 08.02.2020
+-  retomou funções
+
+
 
 
 
