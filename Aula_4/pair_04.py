@@ -1,6 +1,6 @@
 ''' 
  4) Leia uma frase do usuário e informe as letras 
- e a quantidade de apariçõest
+ e a quantidade de aparições
  '''
 
 frase = input('digite algo: ')
@@ -15,18 +15,9 @@ for palavra in frase:
 lista_final = []
 
 for letra in letras:
-    for x in frase:
-        print(letra, x)
-      
-
-
-
-
-    
-
-
-
-    
-print(letras)
-
+    x = 0
+    for repeticoes in frase:
+        if repeticoes == letra:
+            x = x + 1
+    print('A letra:', letra ,'aparece', x , 'vezes')
 
