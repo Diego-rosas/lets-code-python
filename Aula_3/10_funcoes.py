@@ -1,12 +1,12 @@
 
 
 def soma_listas(lista1, lista2):
-    lista4 = []
+    nova_lista = []
     
     for valor1, valor2 in zip(lista1, lista2):
-        lista4.append(valor1 + valor2)
+        nova_lista.append(valor1 + valor2)
     
-    return lista4
+    return nova_lista
 
 lista1 = [1,4,3]
 lista2 = [3,5,1]
