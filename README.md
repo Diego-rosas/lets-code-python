@@ -35,6 +35,7 @@ http://www.devfuria.com.br/python/virtualenv/
 # 4º sabado 08.02.2020
 -  retomou funções
 
+```
 *** AGENDA DO CURSO ****
 
 - 15.02 Tuplas, Dicionario, Arquivo
@@ -44,7 +45,4 @@ http://www.devfuria.com.br/python/virtualenv/
 - 14.03 WEB, Projeto
 - 21.03 Projeto
 - 28.03 Apresenta Projeto
-
-
-
-
+```
