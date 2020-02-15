@@ -9,6 +9,10 @@ def cadastro(nome, idade, mail):
     pessoa = {'nome': nome, 'idade': idade, 'email': mail}
     return pessoa
 
-pessoa = cadastro('carlos', 36, 'carlos@mail.com')
+nome = input('nome: ')
+idade = int(input ('idade: '))
+email = input ('email: ')
+
+pessoa = cadastro(nome, idade, email)
 
 print(pessoa)
