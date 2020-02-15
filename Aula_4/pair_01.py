@@ -13,8 +13,9 @@ def trocaLugar(pos1, pos2):
     print(lista)
 
 
-    valor1 = lista[pos1]
-    valor2 = lista[pos2]
+    valor1 = lista[pos1 -1]
+    valor2 = lista[pos2 -1]
+# alterado para -1 pois o user nao precisa saber que a lista inicia em zero
 
     lista[pos1] = valor2
     lista[pos2] = valor1

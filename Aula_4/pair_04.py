@@ -10,7 +10,7 @@ def conta_letras_frase(frase):
             letras.append(palavra)
 
     # letras.remove(' ')
-
+    #poderia ter usado o list()
     lista_final = []
     
     for letra in letras:
@@ -19,7 +19,7 @@ def conta_letras_frase(frase):
             if repeticoes == letra:
                 x = x + 1
         
-        if letra != ' ':
+        if letra != ' ' and letra not in lista_final:
             print (letra, x)
             tupla = (letra , x) # aqui eu poderia só dar um print, mas vou seguir com tuplas;
         lista_final.append(tupla)
