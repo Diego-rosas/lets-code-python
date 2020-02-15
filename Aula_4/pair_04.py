@@ -11,6 +11,7 @@ def conta_letras_frase(frase):
 
     # letras.remove(' ')
     #poderia ter usado o list()
+    # poderia ter usado o comando index
     lista_final = []
     
     for letra in letras:
