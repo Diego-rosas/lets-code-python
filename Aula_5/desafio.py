@@ -36,9 +36,16 @@ for indice, pessoa in enumerate(clientes_v1):
     if mais_velho < clientes_v1[indice]['idade']:
         mais_velho = clientes_v1[indice]['idade']
 
-    if maior_salario > clientes_v1[indice]['salario']:
+    if maior_salario < clientes_v1[indice]['salario']:
         maior_salario = clientes_v1[indice]['salario']
+        nome_rico = clientes_v1[indice]['nome']
+        idade_rico = clientes_v1[indice]['idade']
        
-print('O mais jovem tem: {} e o mais velho tem {}'.format(mais_jovem, mais_velho))
+print('O mais jovem tem: {} e o mais velho tem {}'.format(
+    mais_jovem, mais_velho))
 
+print('o maior salario é de {} quem ganha é {} e tem {} anos'.format(
+    maior_salario,
+    nome_rico,
+    idade_rico ))
 # Quem ganha o maior salario? (o nome e idade)
