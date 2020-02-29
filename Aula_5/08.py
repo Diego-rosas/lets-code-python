@@ -15,12 +15,11 @@ def cadastro(cpf, nome, idade, mail):
      
 ## print (cadastro('333', 'vlad', 36, 'vlad@teste.com'))
 
-
 resposta = ''
 respostas = {}
-while resposta != '3':
+while resposta != '4':
     
-    resposta = input('digite 1 para cadastro, 2 para exibir e 3 para sair: ')
+    resposta = input('digite 1 para cadastro, 2 para exibir e 3 para buscar, 4 para sair: ')
     
     if resposta == '1':
         print('vc digitou 1 - cadastro')
@@ -34,7 +33,28 @@ while resposta != '3':
         print('vc digitou 2 - exibe cadastro')
         print(respostas)
     
+    elif resposta == '3':
+        cpf_busca = input('digite o cpf desejado: ')
+
+        # for registros in respostas:
+        #     if registros == cpf_busca:
+        #         print(respostas[registros])
+        
+        # v1 serve para lista de dicionarios
+        # for registros in respostas:
+        #     if cpf_busca in respostas.keys():
+        #         print(respostas[cpf_busca])
+
+        
+        #v2 serve para dicionarios de dicionarios
+        # {cpf:{}}
+        if cpf_busca in respostas.keys():
+            print(respostas[cpf_busca])
+        else:
+            print('Esse CPF nao está cadastrado')
+
+    
     else:
         print('Tchau!')
-        resposta = '3'
+        resposta = '4'
 

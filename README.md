@@ -39,6 +39,10 @@ http://www.devfuria.com.br/python/virtualenv/
 - revisao exercicios coding_pair
 - tuplas, dicionario
 
+# 6º Sábado 29.02.2020 
+
+
+
 
 ```
 *** AGENDA DO CURSO ****
