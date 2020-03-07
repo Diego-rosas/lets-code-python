@@ -40,8 +40,12 @@ http://www.devfuria.com.br/python/virtualenv/
 - tuplas, dicionario
 
 # 6º Sábado 29.02.2020 
+- Dicionarios
+- Gravar e ler arquivos CSV e Texto
 
-
+# 7º Sábado 07.03.2020
+- POO
+- Projetos
 
 
 ```
