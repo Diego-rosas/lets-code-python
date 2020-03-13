@@ -7,7 +7,7 @@ r = requests.get(url)
 
 soup = BeautifulSoup( r.text, 'html.parser' )
 
-print(soup)
+# print(soup)
 
 # tabela_ximoveis = soup.find('table')
 
