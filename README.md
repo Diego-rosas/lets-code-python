@@ -41,6 +41,7 @@ http://www.devfuria.com.br/python/virtualenv/
 
 # 6º Sábado 29.02.2020 
 - Dicionarios
+- Pandas
 - Gravar e ler arquivos CSV e Texto
 
 # 7º Sábado 07.03.2020
