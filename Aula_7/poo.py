@@ -21,8 +21,6 @@ pass
 
 class Carro():
 
-    
-
     def __init__(self, marca, modelo, ano, versao, cor):
         self.marca = marca
         self.modelo = modelo

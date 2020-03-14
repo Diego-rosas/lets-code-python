@@ -52,11 +52,11 @@ http://www.devfuria.com.br/python/virtualenv/
 ```
 *** AGENDA DO CURSO ****
 
-- 15.02 Tuplas, Dicionario, Arquivo
-- 22.02 Carnaval
-- 29.02 Revisao, POO
-- 07.03 POO, Tkinter
-- 14.03 WEB, Projeto
-- 21.03 Projeto
-- 28.03 Apresenta Projeto
+1 - 15.02 Tuplas, Dicionario, Arquivo
+2 - 22.02 Carnaval
+3 - 29.02 Revisao, POO
+4 - 07.03 POO, Tkinter
+5 - 14.03 WEB, Projeto
+6 - 21.03 Projeto
+7 - 28.03 Apresenta Projeto
 ```
