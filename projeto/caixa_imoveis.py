@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
 
 r = requests.get(url)
