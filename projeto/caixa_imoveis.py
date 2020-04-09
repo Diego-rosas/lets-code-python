@@ -21,6 +21,8 @@ tabela_ximoveis = soup.find('table')
 #     array = re.findall(r'[0-9]+', str) 
 #     return array 
   
+imoveis_caixa ={}
+
 
 for imovel in tabela_ximoveis.find_all('tr'):
     detalhe         = imovel.find('a', href=True)
