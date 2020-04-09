@@ -55,8 +55,8 @@ http://www.devfuria.com.br/python/virtualenv/
 1 - 15.02 Tuplas, Dicionario, Arquivo
 2 - 22.02 Carnaval
 3 - 29.02 Revisao, POO
-4 - 07.03 POO, Tkinter
-5 - 14.03 WEB, Projeto
-6 - 21.03 Projeto
-7 - 28.03 Apresenta Projeto
+4 - 07.03 POO, Tkinter // Corona
+5 - 14.03 WEB, Projeto // Corona
+6 - 21.03 Projeto // Corona
+7 - 28.03 Apresenta Projeto // Corona
 ```
