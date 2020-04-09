@@ -19,8 +19,29 @@ class ImoveisCaixa():
         pass
 
 
+#teste de classe
+imovel_caixa = ImoveisCaixa ('<link>', 'rua', 'bixiga', 'centroVelho', 15000, 250000,'20%','leilão','#','Guarulhos','SP')
+
+
+import requests
+from bs4 import BeautifulSoup
 
 class ExtrairImoveis():
 
-    pass
+    def captura_imoveis(self):
+
+        # fazer primeiro funcionar SP depois fazer capturar todo Brasil
+        try:
+            url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
+            response = requests.get(url)
+            soup = BeautifulSoup (response.text, 'html.parser')
+            tabela = soup.find('table')
+            return tabela
+        except:
+            return print("Site deve estar fora do ar")
+
+
+        
+            
+
 

@@ -3,6 +3,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+from caixa_imoveis import ImoveisCaixa
+
 
 url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
 
@@ -22,7 +24,8 @@ tabela_ximoveis = soup.find('table')
 #     array = re.findall(r'[0-9]+', str) 
 #     return array 
   
-imoveis_caixa ={}
+imovel_caixa = ImoveisCaixa()
+
 
 
 for imovel in tabela_ximoveis.find_all('tr'):
