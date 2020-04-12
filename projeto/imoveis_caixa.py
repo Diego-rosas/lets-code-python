@@ -28,17 +28,28 @@ from bs4 import BeautifulSoup
 
 class ExtrairImoveis():
 
-    def captura_imoveis(self):
+    def acessa_ximoveis(self, url):
+        response = requests.get(url)
 
-        # fazer primeiro funcionar SP depois fazer capturar todo Brasil
-        try:
-            url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
-            response = requests.get(url)
+        if response.status_code == requests.codes.ok:
             soup = BeautifulSoup (response.text, 'html.parser')
             tabela = soup.find('table')
             return tabela
-        except:
-            return print("Site deve estar fora do ar")
+        else:
+            return "URL deve estar fora do ar"
+
+
+ 
+url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
+rotina = ExtrairImoveis()
+
+print(rotina.acessa_ximoveis(url))
+
+
+
+# for imovel in tabela.find_all('tr'):
+#     detalhe = imovel.find('a', href=True)
+#     print(detalhe)
 
 
         
