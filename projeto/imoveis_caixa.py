@@ -36,14 +36,22 @@ class ExtrairImoveis():
             tabela = soup.find('table')
             return tabela
         else:
-            return "URL deve estar fora do ar"
+            raise TypeError ("site fora do ar, código http:", response.status_code)
+            
 
-
+        
  
 url = 'https://venda-imoveis.caixa.gov.br/listaweb/Lista_imoveis_SP.htm?'
 rotina = ExtrairImoveis()
 
-print(rotina.acessa_ximoveis(url))
+tabela = rotina.acessa_ximoveis(url)
+
+print(tabela)
+
+try: 
+    print(tabela.find('tr'))
+except:
+    print("site fora do ar")
 
 
 
