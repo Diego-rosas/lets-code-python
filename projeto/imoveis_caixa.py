@@ -20,7 +20,7 @@ class ImoveisCaixa():
 
 
 #teste de classe
-imovel_caixa = ImoveisCaixa ('<link>', 'rua', 'bixiga', 'centroVelho', 15000, 250000,'20%','leilão','#','Guarulhos','SP')
+# imovel_caixa = ImoveisCaixa ('<link>', 'rua', 'bixiga', 'centroVelho', 15000, 250000,'20%','leilão','#','Guarulhos','SP')
 
 
 import requests
@@ -46,10 +46,30 @@ rotina = ExtrairImoveis()
 
 tabela = rotina.acessa_ximoveis(url)
 
-print(tabela)
+# print(tabela)
 
-try: 
-    print(tabela.find('tr'))
+try:
+    lista_imoveis = []
+
+    for imovel in tabela.find('tr'):
+
+        link             = imovel.find('a', href=True)
+        endereco         = imovel.find_all('td')[1].text.strip()
+        bairro           = imovel.find_all('td')[2].text.strip()
+        descricao        = imovel.find_all('td')[3].text.strip()
+        preco            = imovel.find_all('td')[4].text.strip()
+        avaliacao        = imovel.find_all('td')[5].text.strip() 
+        desconto         = imovel.find_all('td')[6].text.strip()
+        modalidade_venda = imovel.find_all('td')[7].text.strip()
+        foto             = imovel.find_all('td')[8].text.strip()
+        cidade           = imovel.find_all('td')[9].text.strip()
+        estado           = imovel.find_all('td')[10].text.strip()
+
+        imovel_caixa = ImoveisCaixa (link, endereco, bairro, descricao, preco, avaliacao, desconto, modalidade_venda, foto, cidade, estado)
+        lista_imoveis.append(imovel_caixa)
+
+    print(lista_imoveis) 
+
 except:
     print("site fora do ar")
 
