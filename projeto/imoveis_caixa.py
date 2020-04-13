@@ -24,6 +24,8 @@ class ImoveisCaixa():
 
 
 import requests
+from bs4 import NavigableString
+from bs4 import Tag
 from bs4 import BeautifulSoup
 
 class ExtrairImoveis():
@@ -57,8 +59,11 @@ class ExtrairImoveis():
                     cidade           = imovel.find_all('td')[9].text.strip()
                     estado           = imovel.find_all('td')[10].text.strip()
                     print(link)
-                    
+
+                # cria objeto    
                 # imovel_caixa = ImoveisCaixa (link, endereco, bairro, descricao, preco, avaliacao, desconto, modalidade_venda, foto, cidade, estado)
+                
+                # cria lista de objetos
                 # lista_imoveis.append(imovel_caixa)
 
         else:
